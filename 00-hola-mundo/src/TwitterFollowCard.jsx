@@ -1,15 +1,17 @@
-import "./App.css"
-export function App(){
+
+
+export function TwitterFollowCard({userName,name,isfollowing}){
+const imageSrc = `https://unavatar.io/readcv/${userName}`
     return <article className="tw-followCard">
         <header className="tw-followCard-header">
             <img 
             alt="imagen " 
-            src="https://unavatar.io/readcv/elenatorro" 
+            src= {imageSrc}
             className="tw-followCard-avatar" 
             />
             <div className="tw-followCard-info">
-                <strong >Angelica Molina</strong>
-                <span className="tw-followCard-infoUserName">@Angelica</span>
+                <strong > {name} </strong>
+                <span className="tw-followCard-infoUserName">@{name}</span>
             </div>
 
         </header>
