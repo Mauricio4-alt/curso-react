@@ -11,7 +11,7 @@ const imageSrc = `https://unavatar.io/readcv/${userName}`
             />
             <div className="tw-followCard-info">
                 <strong > {name} </strong>
-                <span className="tw-followCard-infoUserName">@{name}</span>
+                <span className="tw-followCard-infoUserName">@{userName}</span>
             </div>
 
         </header>

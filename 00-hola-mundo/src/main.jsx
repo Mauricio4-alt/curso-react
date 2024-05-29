@@ -5,13 +5,10 @@ import {App} from './App.jsx'
 import './App.css'
 import { TwitterFollowCard } from './TwitterFollowCard.jsx'
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 
-root.render(
-  <React.Fragment>
-  <TwitterFollowCard userName="elenatorro" name="Elena "/>
-  <TwitterFollowCard userName="" name="Mauricio Urdaneta "/>
-  </React.Fragment>
+root.render(<App/>
 )
 
