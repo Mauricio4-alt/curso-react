@@ -1,8 +1,8 @@
 
 
-export function TwitterFollowCard({userName,name,isfollowing}){
-const imageSrc = `https://unavatar.io/readcv/${userName}`
-const addAt = (userName)=>`@${userName}`
+export function TwitterFollowCard({formatUserName,userName,name,isfollowing}){
+const imageSrc = `https://unavatar.io/${userName}`
+
 return <article className="tw-followCard">
         <header className="tw-followCard-header">
             <img 
@@ -12,7 +12,7 @@ return <article className="tw-followCard">
             />
             <div className="tw-followCard-info">
                 <strong > {name} </strong>
-                <span className="tw-followCard-infoUserName">{addAt(userName)}</span>
+                <span className="tw-followCard-infoUserName">{formatUserName}</span>
             </div>
 
         </header>
