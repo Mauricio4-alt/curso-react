@@ -2,38 +2,44 @@ import React from "react"
 import "./App.css"
 import { TwitterFollowCard } from "./TwitterFollowCard.jsx"
 export function App(){
-    const formatUserName = <span>@mauroj-t28</span>
     
+  const formatUserName = (userName)=> `@${userName}`
     return( <>
     <div className="app">
-     <TwitterFollowCard  isfollowing={true} name="Angelica" 
-     userName="Angelloves" 
-     formatUserName={formatUserName}
-      />
+     <TwitterFollowCard  isfollowing={true}  
+      userName="Angelloves" 
+      formatUserName={formatUserName}
+      >Ana Mujica</TwitterFollowCard>
+
      <TwitterFollowCard  
      isfollowing={false} 
-     name="Angelica" userName="Angelloves"
-      formatUserName={formatUserName} 
-      />
+     
+      formatUserName={formatUserName}
+      >Angela</TwitterFollowCard>
      <TwitterFollowCard  
      isfollowing={true} 
-     name="Urdaneta Mauricio" userName="Mauro"
+    userName="Mauro"
      formatUserName={formatUserName}
-     />
+     >Diego Puertas </TwitterFollowCard>
      <TwitterFollowCard  
      isfollowing={false} 
-     name="Diego Lopez" userName="sindresorhus@gmail.com"
+      userName="sindresorhus@gmail.com"
       formatUserName={formatUserName}
-      />
+      >Andres lozano</TwitterFollowCard>
      <TwitterFollowCard  
      isfollowing={true} 
-     name="Manuel Haylin" userName="kikobeats"
+      userName="kikobeats"
       formatUserName={formatUserName}
-      />
+      >
+        Andres gomez
+      </TwitterFollowCard>
      <TwitterFollowCard  
      isfollowing={false} 
-     name="Jesus Guerra" userName="Guerra-28"
+     userName="Guerra-28"
      formatUserName={formatUserName}
-      />
+      
+      >
+        Angel Guerra
+      </TwitterFollowCard>
      </div>
 </>)}
